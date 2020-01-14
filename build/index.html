@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Галерея</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css" type="text/css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Test app</h1>
+  </header>
+  <main>
+    <section class="gallery">
+      <h2 class="visually-hidden">Галерея фотографий</h2>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__copyright">&#169; 2018-2019</p>
+  </footer>
+
+  <section class="popup hidden">
+    <div class="popup__overlay"></div>
+    <div class="popup__content">
+      <div class="popup__picture-box">
+        <img class="popup__picture" src="" alt="">
+      </div>
+      <div class="popup__comments"></div>
+      <form class="popup__form" method="post">
+        <input type="text" name="name" placeholder="Ваше имя" required="">
+        <input type="text" name="comment" placeholder="Ваш комментарий" required="">
+        <button type="submit">Оставить комментарий</button>
+      </form>
+      <button class="popup__close"></button>
+    </div>
+  </section>
+
+  <template id="picture">
+    <div class="picture-box">
+      <img class="picture" src="" alt="">
+    </div>
+  </template>
+
+  <template id="comment">
+    <div class="comment">
+      <p class="comment__date"></p>
+      <p class="comment__message"></p>
+    </div>
+  </template>
+
+  <!-- <script src="js/vendor.min.js"></script> -->
+  <script src="js/script.js"></script>
+</body>
+</html>

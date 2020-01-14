@@ -1,0 +1,52 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.picture-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 229px;
+  height: 142px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+  font-size: 0;
+  line-height: 0;
+
+  overflow: hidden;
+  transition: 0.2s;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+
+    transform: translateY(-5px);
+  }
+}
+
+.picture {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .gallery {
+    max-width: 320px;
+  }
+
+  .picture-box {
+    width: 280px;
+    height: 171px;
+    margin-right: 0;
+  }
+}
