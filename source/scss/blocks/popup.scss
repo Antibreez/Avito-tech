@@ -1,7 +1,13 @@
 .popup {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
 
   z-index: 100;
+  overflow: auto;
 }
 
 .popup__overlay {
@@ -16,7 +22,7 @@
 }
 
 .popup__content {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
 
@@ -179,6 +185,7 @@
     min-height: 100vh;
     margin-left: 0;
     margin-top: 0;
+    padding-bottom: 50px;
     top: 0;
     left: 0;
   }
@@ -194,6 +201,7 @@
 @media (max-width: 430px) {
   .popup__content {
     padding: 0;
+    padding-bottom: 50px;
     align-items: center;
   }
 
